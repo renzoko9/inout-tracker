@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-  title = "INOUT - Tu dinero, bajo control · Disponible el 1 de julio",
-  description = "INOUT es una app de finanzas personales con Otto, un asistente que registra tus gastos por ti. En desarrollo activo. Primera version para probar el 1 de julio de 2026.",
+  title = "INOUT - Tu dinero, bajo control · Muy pronto disponible",
+  description = "INOUT es una app de finanzas personales con Otto, un asistente que registra tus gastos por ti. En desarrollo activo. Muy pronto disponible.",
 } = Astro.props;
 ---
 
@@ -50,32 +50,6 @@ const {
         }
         update();
         window.addEventListener("scroll", update, { passive: true });
-      })();
-
-      (function () {
-        var target = new Date("2026-07-01T00:00:00").getTime();
-        var nodes = document.querySelectorAll("[data-countdown]");
-        if (!nodes.length) return;
-        function pad(n) { return String(n).padStart(2, "0"); }
-        function setv(node, key, val) {
-          var el = node.querySelector('[data-cd="' + key + '"]');
-          if (el) el.textContent = val;
-        }
-        function tick() {
-          var diff = Math.max(0, target - Date.now());
-          var days = Math.floor(diff / 86400000);
-          var hours = Math.floor((diff % 86400000) / 3600000);
-          var mins = Math.floor((diff % 3600000) / 60000);
-          var secs = Math.floor((diff % 60000) / 1000);
-          nodes.forEach(function (n) {
-            setv(n, "days", pad(days));
-            setv(n, "hours", pad(hours));
-            setv(n, "mins", pad(mins));
-            setv(n, "secs", pad(secs));
-          });
-        }
-        tick();
-        setInterval(tick, 1000);
       })();
 
       (function () {

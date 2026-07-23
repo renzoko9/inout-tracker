@@ -6,7 +6,7 @@
   <div class="wrap">
     <div class="cta reveal">
       <div class="cta__dots" aria-hidden="true"></div>
-      <div class="cta__ghost display" aria-hidden="true">JUL 1</div>
+      <div class="cta__ghost display" aria-hidden="true">PRONTO</div>
 
       <div class="cta__inner">
         <div class="cta__mark">
@@ -19,39 +19,13 @@
         </span>
 
         <h2 class="cta__title">
-          Disponible el<br /><span class="accent">1 de julio de 2026.</span>
+          Muy pronto,<br /><span class="accent">disponible.</span>
         </h2>
 
         <p class="cta__lead">
-          Estamos terminando la primera version para probar. Vuelve el dia del
-          lanzamiento: los enlaces de descarga apareceran aqui.
+          Estamos terminando la primera version para probar. Vuelve pronto:
+          los enlaces de descarga apareceran aqui.
         </p>
-
-        <div
-          class="cta__count"
-          data-countdown
-          aria-label="Cuenta regresiva al lanzamiento"
-        >
-          <div class="cd">
-            <span class="cd__n" data-cd="days">--</span>
-            <span class="cd__u">dias</span>
-          </div>
-          <span class="cd__sep">:</span>
-          <div class="cd">
-            <span class="cd__n" data-cd="hours">--</span>
-            <span class="cd__u">hrs</span>
-          </div>
-          <span class="cd__sep">:</span>
-          <div class="cd">
-            <span class="cd__n" data-cd="mins">--</span>
-            <span class="cd__u">min</span>
-          </div>
-          <span class="cd__sep">:</span>
-          <div class="cd">
-            <span class="cd__n" data-cd="secs">--</span>
-            <span class="cd__u">seg</span>
-          </div>
-        </div>
 
         <div class="cta__badges">
           <div class="store-badge" aria-label="App Store - proximamente">
@@ -154,58 +128,9 @@
     color: var(--color-white-70);
   }
 
-  /* Countdown (mismo lenguaje que el hero) */
-  .cta__count {
-    margin-top: 40px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: clamp(10px, 2vw, 18px);
-  }
-  .cd {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 62px;
-  }
-  .cd__n {
-    font-family: var(--font-body);
-    font-weight: 800;
-    font-feature-settings: "tnum" 1;
-    font-size: clamp(38px, 5vw, 58px);
-    line-height: 1;
-    letter-spacing: -0.03em;
-    color: var(--color-white);
-  }
-  .cd__u {
-    margin-top: 10px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-white-60);
-  }
-  .cd__sep {
-    font-family: var(--font-body);
-    font-weight: 800;
-    font-size: clamp(30px, 4vw, 46px);
-    line-height: 1;
-    color: var(--color-green);
-    padding-top: 2px;
-  }
-  @media (max-width: 480px) {
-    .cd {
-      min-width: 0;
-      flex: 1;
-    }
-    .cta__count {
-      gap: 6px;
-    }
-  }
-
   /* Store badges (estado proximamente, no clicables) */
   .cta__badges {
-    margin-top: 40px;
+    margin-top: 44px;
     display: flex;
     gap: 14px;
     flex-wrap: wrap;

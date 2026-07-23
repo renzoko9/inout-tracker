@@ -9,7 +9,7 @@
   <div class="wrap hero__inner">
     <div class="hero__chip">
       <span class="dot"></span>
-      En desarrollo &middot; Primera version el 1 de julio
+      En desarrollo &middot; Muy pronto disponible
     </div>
 
     <h1 class="hero__h1">
@@ -31,40 +31,6 @@
       <a href="#insights" class="btn btn--ghost-on-dark">Ver los beneficios</a>
     </div>
 
-    <div
-      class="hero__count"
-      data-countdown
-      aria-label="Cuenta regresiva al lanzamiento"
-    >
-      <div class="hero__count-label">
-        Lanzamiento &middot; 1 de julio de 2026
-      </div>
-      <div class="hero__count-grid">
-        <div class="cd">
-          <span class="cd__n" data-cd="days">--</span><span class="cd__u"
-            >dias</span
-          >
-        </div>
-        <span class="cd__sep">:</span>
-        <div class="cd">
-          <span class="cd__n" data-cd="hours">--</span><span class="cd__u"
-            >hrs</span
-          >
-        </div>
-        <span class="cd__sep">:</span>
-        <div class="cd">
-          <span class="cd__n" data-cd="mins">--</span><span class="cd__u"
-            >min</span
-          >
-        </div>
-        <span class="cd__sep">:</span>
-        <div class="cd">
-          <span class="cd__n" data-cd="secs">--</span><span class="cd__u"
-            >seg</span
-          >
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="hero__cue" aria-hidden="true">
@@ -175,75 +141,11 @@
     }
   }
 
-  /* Countdown */
-  .hero__count {
-    position: relative;
-    z-index: 2;
-    margin-top: clamp(48px, 8vw, 84px);
-    padding-top: 30px;
-    border-top: 1px solid var(--color-white-15);
-    max-width: 520px;
-  }
-  .hero__count-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-white-60);
-    margin-bottom: 18px;
-  }
-  .hero__count-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-  }
-  .cd {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 64px;
-  }
-  .cd__n {
-    font-family: var(--font-body);
-    font-weight: 800;
-    font-feature-settings: "tnum" 1;
-    font-size: clamp(40px, 5vw, 60px);
-    line-height: 1;
-    color: var(--color-white);
-    letter-spacing: -0.03em;
-  }
-  .cd__u {
-    margin-top: 8px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-white-60);
-  }
-  .cd__sep {
-    font-family: var(--font-body);
-    font-weight: 800;
-    font-size: clamp(32px, 4vw, 48px);
-    line-height: 1;
-    color: var(--color-green);
-    padding-top: 2px;
-  }
-  @media (max-width: 480px) {
-    .cd {
-      min-width: 0;
-      flex: 1;
-    }
-    .hero__count-grid {
-      gap: 8px;
-    }
-  }
-
   /* Staggered entry */
   .hero__chip,
   .hero__h1,
   .hero__sub,
-  .hero__ctas,
-  .hero__count {
+  .hero__ctas {
     opacity: 0;
     animation: inout-rise 720ms var(--ease-out) forwards;
   }
@@ -258,9 +160,6 @@
   }
   .hero__ctas {
     animation-delay: 440ms;
-  }
-  .hero__count {
-    animation-delay: 560ms;
   }
 
   .hero__ghost {
@@ -319,7 +218,6 @@
     .hero__h1,
     .hero__sub,
     .hero__ctas,
-    .hero__count,
     .hero__cue {
       opacity: 1;
     }
