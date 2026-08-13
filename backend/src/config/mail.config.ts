@@ -18,10 +18,7 @@ export function mailConfig(): MailerAsyncOptions {
         },
       },
       defaults: {
-        from: config.get<string>(
-          'EMAIL_FROM',
-          '"OrbiFlow" <noreply@orbiflow.com>',
-        ),
+        from: config.get<string>('EMAIL_FROM', '"INOUT" <noreply@inout.com>'),
       },
       template: {
         dir: join(__dirname, '..', 'common', 'providers', 'mail', 'templates'),

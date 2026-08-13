@@ -33,10 +33,8 @@ async function bootstrap() {
 
   // Configuración de Swagger
   const config = new DocumentBuilder()
-    .setTitle('OrbiFlow Tracker API')
-    .setDescription(
-      'API para gestión de finanzas personales - OrbiFlow Tracker',
-    )
+    .setTitle('INOUT API')
+    .setDescription('API para gestión de finanzas personales - INOUT')
     .setVersion('1.0')
     .addBearerAuth(
       {
@@ -53,7 +51,7 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/docs', app, document, {
-    customSiteTitle: 'OrbiFlow Tracker API Docs',
+    customSiteTitle: 'INOUT API Docs',
     customCss: '.swagger-ui .topbar { display: none }',
   });
 

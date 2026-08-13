@@ -1,4 +1,4 @@
-# Orbiflow Tracker - Backend
+# INOUT - Backend
 
 Sistema de gestión financiera personal construido con NestJS y PostgreSQL.
 
@@ -142,7 +142,7 @@ DATABASE_HOST=localhost
 DATABASE_PORT=5432
 DATABASE_USER=postgres
 DATABASE_PASSWORD=tu_password
-DATABASE_NAME=orbiflow_tracker
+DATABASE_NAME=inout_tracker
 JWT_SECRET=tu_secret_token
 ```
 
