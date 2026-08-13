@@ -2,7 +2,7 @@
 
 App de finanzas personales con asistente de IA. Registra ingresos y gastos, visualiza balances por cuenta y patrimonio total, recibe insights accionables generados por LLM sobre datos reales, y conversa con **Otto**, el asistente integrado que entiende texto e imagenes (fotos de recibos) y registra movimientos por ti.
 
-> El repositorio se llama `orbiflow-tracker` por razones historicas; la marca del producto es **INOUT**.
+> El repositorio se llamaba `orbiflow-tracker` por razones historicas; fue renombrado a `inout-tracker` para alinearse con la marca del producto, **INOUT**.
 
 ## Tech Stack
 
@@ -18,7 +18,7 @@ App de finanzas personales con asistente de IA. Registra ingresos y gastos, visu
 ## Estructura del monorepo
 
 ```
-orbiflow-tracker/
+inout-tracker/
 ├── backend/                    # API REST NestJS
 │   └── src/
 │       ├── config/             # ORM, mail, data-source (migraciones)

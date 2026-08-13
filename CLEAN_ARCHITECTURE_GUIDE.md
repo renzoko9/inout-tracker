@@ -1,13 +1,13 @@
-# Clean Architecture Simplificada - OrbiFlow Tracker
+# Clean Architecture Simplificada - INOUT
 
-Guía completa de arquitectura para el frontend móvil de OrbiFlow Tracker usando React Native + Expo.
+Guía completa de arquitectura para el frontend móvil de INOUT usando React Native + Expo.
 
 ---
 
 ## 📁 Estructura Completa del Proyecto
 
 ```
-orbiflow-mobile/
+inout-mobile/
 ├── app/                                    # Expo Router (UI Routing)
 │   ├── (auth)/
 │   │   ├── login.tsx
@@ -814,8 +814,8 @@ class CreateAccountUseCase {
 
 ### 1. Crear proyecto Expo
 ```bash
-npx create-expo-app@latest orbiflow-mobile --template tabs
-cd orbiflow-mobile
+npx create-expo-app@latest inout-mobile --template tabs
+cd inout-mobile
 ```
 
 ### 2. Instalar dependencias
@@ -892,7 +892,7 @@ Cuando implementes una nueva feature, sigue este checklist:
 
 ## 🎯 Conclusión
 
-Esta arquitectura es **perfecta para OrbiFlow Tracker** porque:
+Esta arquitectura es **perfecta para INOUT** porque:
 
 ✅ **No es overkill**: Suficiente estructura sin complejidad extrema
 ✅ **Profesional**: Sigue principios SOLID y Clean Code

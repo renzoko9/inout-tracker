@@ -21,7 +21,7 @@
 
 ---
 
-# OrbiFlow Tracker
+# INOUT
 
 App de finanzas personales (tracker de ingresos/gastos) con asistente IA (Otto). Monorepo con backend, app movil y landing.
 
@@ -37,7 +37,7 @@ App de finanzas personales (tracker de ingresos/gastos) con asistente IA (Otto).
 ## Estructura del monorepo
 
 ```
-orbiflow-tracker/
+inout-tracker/
 ├── backend/                    # API REST NestJS
 │   └── src/
 │       ├── config/             # ORM, mail config
